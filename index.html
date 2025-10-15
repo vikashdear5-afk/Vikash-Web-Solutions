@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Store | Vikash Web Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #0d1117;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #aaa;
+    }
+
+    .store-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: #161b22;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      transform: perspective(1000px) rotateY(0deg);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: perspective(1000px) rotateY(8deg);
+      box-shadow: 0 20px 40px rgba(0, 191, 255, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      color: #00bfff;
+    }
+
+    .card-content p {
+      color: #bbb;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      color: #00ff88;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn {
+      text-decoration: none;
+      background: linear-gradient(90deg, #00bfff, #0077ff);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #00ff88, #00bfff);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+      margin-top: 30px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌐 Vikash Web Store</h1>
+    <p>Ready-to-use professional websites for your business</p>
+  </header>
+
+  <section class="store-container">
+
+    <!-- Website 1 -->
+    <div class="card">
+      <img src="Screenshot 2025-10-07 202945.jpg" alt="Business Website">
+      <div class="card-content">
+        <h3>Business Website</h3>
+        <p>Perfect for salons, startups, or service-based businesses. Fast, modern, and responsive.</p>
+        <div class="price">₹4,999</div>
+        <div class="buttons">
+          <a href="https://your-demo-link-1.com" class="btn">View Demo</a>
+          <a href="https://wa.me/9162115958" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Website 2 -->
+    <div class="card">
+      <img src="Screenshot 2025-10-07 174516.jpg" alt="E-commerce Website">
+      <div class="card-content">
+        <h3>E-Commerce Website</h3>
+        <p>Includes product pages, shopping cart, and payment gateway setup. Ideal for online stores.</p>
+        <div class="price">₹7,999</div>
+        <div class="buttons">
+          <a href="https://your-demo-link-2.com" class="btn">View Demo</a>
+          <a href="https://wa.me/9162115958" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Website 3 -->
+    <div class="card">
+      <img src="Screenshot 2025-10-15 064949.jpg" alt="Portfolio Website">
+      <div class="card-content">
+        <h3>Portfolio Website</h3>
+        <p>Showcase your work beautifully — ideal for freelancers, designers, or developers.</p>
+        <div class="price">₹3,999</div>
+        <div class="buttons">
+          <a href="https://your-demo-link-3.com" class="btn">View Demo</a>
+          <a href="https://wa.me/9162115958" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Vikash Web Solutions — All rights reserved.
+  </footer>
+
+</body>
+</html>
